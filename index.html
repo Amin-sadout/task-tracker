@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Track your tasks with our temu version task tracker</h1>
+
+    <div class="controls">
+      <input id="taskInput" type="text" placeholder="Enter a task" />
+      <button id="addBtn">Add Task here dire sir</button>
+    </div>
+
+    <p id="message">i Don't see tasks yet? why so?</p>
+
+    <div class="summary">
+      <p>All the tasks: <span id="totalTasks">0</span></p>
+      <p>Finito: <span id="completedTasks">0</span></p>
+      <p>whats left: <span id="remainingTasks">0</span></p>
+    </div>
+
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
