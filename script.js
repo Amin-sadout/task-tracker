@@ -5,6 +5,17 @@ const totalTasksText = document.querySelector('#totalTasks');
 const completedTasksText = document.querySelector('#completedTasks');
 const remainingTasksText = document.querySelector('#remainingTasks');
 const taskList = document.querySelector('#taskList');
+const themeBtn = document.getElementById('themeBtn');
+
+themeBtn.addEventListener('click', () => {
+  if (document.body.classList.contains('dark')) {
+    document.body.classList.remove('dark');
+    themeBtn.innerText = 'Dark Mode';
+  } else {
+    document.body.classList.add('dark');
+    themeBtn.innerText = 'Light Mode';
+  }
+});
 
 let tasks = [];
 let nextId = 1;
